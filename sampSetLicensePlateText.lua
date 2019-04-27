@@ -1,4 +1,4 @@
-function sampSetLicensePlateText(id, text)
+function sampSetLicensePlateText(id, text) -- создаём функцию с параметрами: ID автомобиля (SAMPID), text (текст номерного знака)
     if isCharInAnyCar(PLAYER_PED) then -- если игрок сидит в автомобиле, то
     local veh = storeCarCharIsInNoSave(PLAYER_PED) -- получаем handle транспорта, в котором сидит игрок
     local result, id = sampGetVehicleIdByCarHandle(veh) -- получаем SAMPID транспорта по handle
